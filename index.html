@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gamify String</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=none">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/jquery.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <h1><img src="logo.png" alt="Gamify String"></h1>
+      </div>
+    </header>
+
+    <section id="left">
+      <div id="selector">
+        <select class="lang" name="langSelector">
+          <option value="python" selected="selected">Python</option>
+          <option value="java">Java</option>
+          <option value="c_cpp">C/C++</option>
+        </select>
+      </div>
+      <div id="editor"></div>
+      <div id="bottom">
+        <div class="upload">
+          <img src="upload.png" alt="Upload">
+          <p>Upload File instead</p>
+        </div>
+        <input type="text" name="cust" id="custinp" placeholder="Give custom input here">
+        <button type="button" name="next" id="next">Next</button>
+        <button type="button" name="submit" id="submit">Submit</button>
+      </div>
+    </section>
+
+    <section id="right">
+      <h2>Question</h2>
+      <div class="ques">
+        Write a Hello world program
+      </div>
+    </section>
+
+    <section id="result">
+      <p id="wish">Best of luck!!</p>
+      <div class="output">
+          <p>Output</p><br>
+          <p id="output"></p>
+      </div>
+      <div id="loaderContainer">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <defs>
+            <filter id="gooey">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+              <feBlend in="SourceGraphic" in2="goo"></feBlend>
+            </filter>
+          </defs>
+        </svg>
+        <div class="blob blob-0"></div>
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+        <div class="blob blob-5"></div>
+      </div>
+    </section>
+    <footer>Made with <span>&hearts;</span>&nbsp;&nbsp;&nbsp; by <a href="#">Chetan Gulati & Sudhanshu Jain</a></footer>
+    <script src="ace-builds/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
