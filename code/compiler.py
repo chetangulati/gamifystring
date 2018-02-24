@@ -1,5 +1,5 @@
 # BUG: Next line not working like string keywords like \n, \t, \b
-# BUG: Remove file name 
+# BUG: Remove file name
 
 
 
@@ -14,9 +14,8 @@ r.close
 
 fileType = sys.argv[1]
 
-#compile the code
+#compile the
 #def compil(args)
-
 
 #run the code on linux enviornment
 def executecpp():
