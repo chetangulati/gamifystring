@@ -1,4 +1,4 @@
-# BUG: Next line not working like string keywords like \n, \t, \b
+# BUG: Next line not working properly like string keywords like \n, \t, \b
 # BUG: Remove file name
 
 
