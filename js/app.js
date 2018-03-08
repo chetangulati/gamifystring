@@ -16,9 +16,8 @@
           editor.setValue('');
         }
       }
-
-
     });
+
 
     $("#submit").click(function () {
       var data = {
@@ -34,7 +33,7 @@
         data: "data=" + JSON.stringify(data),
         url: "phpfunctions/sendtoserver.php",
         success: function (res) {
-          $("#output").html(res);
+          $("#output").html(res.replace(/\n/g,'<br/>').replace("File \"/var/www/html/GamifyString/code/gamify.py\", line", "Line").replace("/var/www/html/GamifyString/code/gamify.java", "Line ").replace("/var/www/html/GamifyString/code/gamify.cpp:", "Line "));
           setTimeout(function (){
             $("#loaderContainer").css("display", "none");
             $(".output").css("display", "block");
